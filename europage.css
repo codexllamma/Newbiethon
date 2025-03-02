@@ -81,3 +81,42 @@ body{
 main{
     margin: 20px;
 }
+.navbar {
+    position: center; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex; 
+    align-items: center; 
+    padding: 20px 20px; 
+    transition: height 0.3s ease; 
+    height: 60px; 
+    overflow: hidden; 
+}
+
+.navbar:hover {
+    height: 100px; 
+    background-color:black;
+}
+
+.logo img {
+    height: 40px; 
+    margin-right: 20px; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    transition: opacity 0.3s ease; 
+}
+
+.nav-links li {
+    margin: 0 15px; 
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+}

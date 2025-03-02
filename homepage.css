@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar{
     background-color: black;
 }
@@ -19,4 +20,24 @@
 }
 .navbar a:hover{
     background-color:darkblue;
+=======
+.nav{
+    background-color:#d37986;
+    color: black;
+}
+
+.nav a{
+    color: black;
+}
+.nav a:hover{
+    color: #E6B2BA;
+}
+
+body {
+    background-color: beige;
+}
+
+.body{
+    background-color: black;
+>>>>>>> 67ecf80ec8b58d05bc39bc512e5f007037153eda
 }
