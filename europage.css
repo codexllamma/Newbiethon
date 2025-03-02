@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Poppins';
+}
+body,html{
+    height:100%;
+    overflow:hidden;
+}
+.video-container{
+    position:relative;
+    height: 100vh;
+    width:100vw;
+    overflow:hidden;
+}
+
+
+
+.centered-button{
+    padding: 1em 2em;
+    background-color:rgb(62, 58, 58);
+    border: none;
+    color:antiquewhite;
+    width:200px;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index:-1;
+    margin:auto;
+    position:absolute;
+    top:80%;
+    left:90%;
+    transform: translate(-50%,-50%);
+}
+.centered-button::after{
+    content:'';
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    border-radius:100px;
+    background-image:linear-gradient(to bottom right,rgb(11, 87, 144),rgb(241, 63, 241));
+    z-index: -1;
+}
+.centered-button:hover{
+    z-index:2;
+    box-shadow: 40px 0 100px rgb(44, 98, 215),-40px 0 100px rgb(228, 43, 228);
+}
+
+.background-video{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+}
+.map{
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding-bottom: 56.25%;
+}
+iframe{
+ position : absolute;
+ top: 0;
+ left:0;
+ width: 100%;
+ height: 100%;
+ border: none;
+ border-radius: 10px;
+}
+body{
+    margin: 0px;
+}
+main{
+    margin: 20px;
+}
+.navbar {
+    position: center; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    display: flex; 
+    align-items: center; 
+    padding: 20px 20px; 
+    transition: height 0.3s ease; 
+    height: 60px; 
+    overflow: hidden; 
+}
+
+.navbar:hover {
+    height: 100px; 
+    background-color:black;
+}
+
+.logo img {
+    height: 40px; 
+    margin-right: 20px; 
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    transition: opacity 0.3s ease; 
+}
+
+.nav-links li {
+    margin: 0 15px; 
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+}
+.link {
+    position: absolute; 
+    width: 70px;
+    top: 80%; 
+    left: 48%; 
+    transform: translate(-50%, -50%); 
+}

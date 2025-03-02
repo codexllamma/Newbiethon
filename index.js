@@ -1,16 +1,8 @@
 
 
-document.getElementById('new-link').addEventListener("click", (event) => {
+document.getElementById('getstartedbutton').addEventListener("click", (event) => {
   //event.preventDefault(); // Prevents immediate navigation
-
-  let btn = document.getElementById('new-link'); // Get the element
-  btn.classList.add("move-left"); // Add animation class
-
-  setTimeout(() => {
-      btn.style.display = "none";
-      ul.style.display = "none";
-      window.location.href = "newpage.html"; // Hides element after animation
-  }, 500);
+  window.location.href = "homepage.html";
   
   
   let ul = document.getElementById("nav-bar"); // Get UL element

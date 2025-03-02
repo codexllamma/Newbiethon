@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+.navbar{
+    background-color: black;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+.navbar li{
+    flex: 1;
+}
+.navbar a{
+    color:aquamarine;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color:darkblue;
+=======
+=======
 body {
     background-color: lightblue;
     margin: 0;  /* Removes default margin */
@@ -6,6 +31,7 @@ body {
 
 
 
+>>>>>>> 190914d8ca3b287f5a91eb9ad2bac08caa3f81ff
 .nav{
     background-color:#d37986;
     color: black;
@@ -42,6 +68,10 @@ body {
 
 .body{
     background-color: black;
+<<<<<<< HEAD
+>>>>>>> 67ecf80ec8b58d05bc39bc512e5f007037153eda
+}
+=======
 } */
 main {
     margin-left: 20pxs;
@@ -60,7 +90,7 @@ body {
   }
 
   img {
-    width: 280px;  
+    max-width:40%;
     height: auto;  
     border-radius: 20px;
     margin-left: 40px;
@@ -82,7 +112,17 @@ body {
     position: absolute;
     display: none;
 
+
   }
+  @media (max-width: 768px) {
+    main p {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    img {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+}
 
   #data-display {
     min-height: 100vh;  /* Takes up full screen height */
@@ -122,3 +162,8 @@ body {
   transform: translate(-50%, 0) scale(1);
 }
 
+<<<<<<< HEAD
+=======
+  
+
+>>>>>>> 90952436df95cfcd620b0d7e38d181f5359b1928
