@@ -5,9 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="newpage.css">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-uD7grbUJS07n9N26F73AuTDGdnf3Nop9UQDPHMB7Nms6nPsdnTflpjr4Kns5zR+/" crossorigin=""/>
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      .content{
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .new-map {
+      height: 500px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      padding: 0; /* Ensures it appears above other elements */
+}
+    </style>
+
 </head>
 <body>
     <p>This is the new page</p>
     <script src = "index.js"></script>
+    <div id = "content">
+     <div class = "new-map" id = "map">
+        
+         
+    </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+       
+    <script>
+      // Wait for the DOM to load
+      document.addEventListener("DOMContentLoaded", function () {
+        let map = L.map('map').setView([40.7128, -74.0060], 10);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([40.7128, -74.0060]).addTo(map)
+            .bindPopup('Welcome to NYC!')
+            .openPopup();
+});
+
+
+    </script>
 </body>
 </html>

@@ -1,10 +1,14 @@
 .nav{
-    background-color:#E6B2BA;
+    background-color:#d37986;
     color: black;
 }
 
 .nav a{
     color: black;
+}
+
+.nav a:hover{
+  color: #E6B2BA
 }
 
 @keyframes moveLeftDisappear {
