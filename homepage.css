@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .navbar{
     background-color: black;
 }
@@ -21,6 +22,16 @@
 .navbar a:hover{
     background-color:darkblue;
 =======
+=======
+body {
+    background-color: lightblue;
+    margin: 0;  /* Removes default margin */
+    padding: 0;
+  }
+
+
+
+>>>>>>> 190914d8ca3b287f5a91eb9ad2bac08caa3f81ff
 .nav{
     background-color:#d37986;
     color: black;
@@ -33,11 +44,68 @@
     color: #E6B2BA;
 }
 
-body {
+/* body {
     background-color: beige;
 }
 
 .body{
     background-color: black;
+<<<<<<< HEAD
 >>>>>>> 67ecf80ec8b58d05bc39bc512e5f007037153eda
 }
+=======
+} */
+main {
+    margin-left: 20pxs;
+}
+
+main p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 20px;
+}
+
+body {
+    margin: 0;  
+    padding: 0;
+  }
+
+  img {
+    max-width:40%;
+    height: auto;  
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+
+  img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+    transition: ;
+    font-display: 'CustomFont';
+  }
+  
+  .class{
+    position:relative;
+  }
+  .text{
+    padding: 20px;
+    position: absolute;
+    display: none;
+
+
+  }
+  @media (max-width: 768px) {
+    main p {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    img {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+}
+
+
+  
+
