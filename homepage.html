@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <ul class="nav justify-content-center" id="nav-bar">
+    <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" id= "new-link">New</a>
+            <a class="nav-link active" id="new-link" href="newpage.html">New</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="">Visited</a>
@@ -28,12 +28,6 @@
         <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
         </li>
-<<<<<<< HEAD
-      </ul>
-      <script src = "index.js">
-      
-      </script>
-=======
         <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
         </li> -->
@@ -45,20 +39,22 @@
     <main>
         <p>Explore new destinations</p>
         <div class="content">
-            <img src="switz.jpg" alt="tourism in switzerland">
-            <p class="text">Matterhorn,switzerland</p>
-            <img src="northernlights1.jpg" alt="tourism in norway">
-            <img src="greece.jpg" alt="tourism in greece">
-            <img src="georgia.jpg" alt="tourism in italy">
-            <img src="maldives.jpg" alt="tourism in italy">
-            <img src="mauritius.jpg" alt="tourism in italy">
+            <img src="switz.jpg" alt="tourism in switzerland" class="clickable-image" data-dataset ="Switzerland">
+            <img src="northernlights1.jpg" alt="tourism in norway" class="clickable-image" data-dataset ="Norway">
+            <img src="greece.jpg" alt="tourism in greece" class="clickable-image" data-dataset ="Greece">
+            <img src="georgia.jpg" alt="tourism in italy" class="clickable-image" data-dataset ="Italy">
+            <img src="maldives.jpg" alt="tourism in maldives" class="clickable-image" data-dataset ="Maldives">
+            <img src="mauritius.jpg" alt="tourism in mauritius" class="clickable-image" data-dataset ="Mauritius">
+        </div>
+         
+        <div id = "data-display"> 
+           
         </div>
     </main>
 
-    <script href="index.js">
+    <script src="homepage.js">
 
     </script>
->>>>>>> 190914d8ca3b287f5a91eb9ad2bac08caa3f81ff
 </body>
-    
+
 </html>

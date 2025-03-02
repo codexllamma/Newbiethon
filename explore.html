@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .btn-container { margin-bottom: 20px; }
+        button { margin: 5px; padding: 10px 15px; cursor: pointer; }
+        .dataset-container { border: 1px solid #ddd; padding: 20px; display: none; }
+        .images img { width: 100px; height: 100px; margin: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Select a Dataset</h1>
+
+    <div class="btn-container">
+        <button id = 'button'>Dataset 1</button>
+        <button onclick="fetchDataset('65f1a3b2d4e3c67890ab5678')">Dataset 2</button>
+        <button onclick="fetchDataset('65f1a3b2d4e3c67890ab9101')">Dataset 3</button>
+        <button onclick="fetchDataset('65f1a3b2d4e3c67890ab1122')">Dataset 4</button>
+        <button onclick="fetchDataset('65f1a3b2d4e3c67890ab3344')">Dataset 5</button>
+        <button onclick="fetchDataset('65f1a3b2d4e3c67890ab5566')">Dataset 6</button>
+    </div>
+
+    <div id="dataset-container" class="dataset-container">
+        <h2 id="dataset-title"></h2>
+        <p id="dataset-description"></p>
+        <div id="dataset-images" class="images"></div>
+    </div>
+
+    <script>
+        function fetchDataset(id) {
+            fetch(`http://localhost:5000/api/datasets/${id}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("dataset-title").innerText = data.title;
+                    document.getElementById("dataset-description").innerText = data.description;
+
+                    let imagesContainer = document.getElementById("dataset-images");
+                    imagesContainer.innerHTML = ""; // Clear previous images
+                    data.images.forEach(img => {
+                        let imgElement = document.createElement("img");
+                        imgElement.src = img;
+                        imagesContainer.appendChild(imgElement);
+                    });
+
+                    document.getElementById("dataset-container").style.display = "block";
+                })
+                .catch(error => {
+                    console.error("Error fetching dataset:", error);
+                    alert("Failed to load dataset.");
+                });
+        }
+    </script>
+
+</body>
+</html>
