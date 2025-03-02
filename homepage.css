@@ -6,3 +6,21 @@
 .nav a{
     color: black;
 }
+
+@keyframes moveLeftDisappear {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-150px); opacity: 0; }
+}
+
+.move-left {
+  animation: moveLeftDisappear 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}

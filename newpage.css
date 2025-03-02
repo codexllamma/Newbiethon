@@ -6,3 +6,12 @@
   background-color: #FFF7F3;
 }
 */
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
